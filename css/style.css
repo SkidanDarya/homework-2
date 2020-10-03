@@ -1,47 +1,173 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .awesome {
-    width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 .container {
-    width: 100%;
+    width: 1400px;
     text-align: center;
 }
-.container-title {
-  margin-top: 107px; 
-  text-align: center; 
+.awesome-title h2 {
+    margin-top: 107px; 
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 36px; 
+}
+.awesome-title:after {
+    display: block;
+    content: '';  
+    width: 64px ;
+    height: 2px;
+    margin: 30px auto;
+    background-color: orange;
 }
 .container p {
     margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.5;
+    }
+.awesome-cards {
+    display: flex;
+    margin: 80px auto;
+    width: 1113px;
+    justify-content: space-around;
 }
-hr{
-    border: none;
-    height: 2px;
-    width: 64px;
-    background-color: peru;
-    margin-top: 30px;
-}
-.cards {
-display: flex;
-margin: 80px auto;
-text-align: center;
-justify-content: space-between;
-}
-.icon {
-    width: 70px;
-    height: 70px;
+.awesome-icon-light {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
     border: 2px solid orange;
     border-radius: 50%;
+}
+.awesome-icon-light img {
+    width: 25px;
+    margin: 21px 25px;
+}
+.awesome-icon-keyboard {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+.awesome-icon-keyboard img {
+    width: 30px;
+    margin: 25px 25px;
+}
+.awesome-icon-flash {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+.awesome-icon-flash img {
+    width: 30px;
+    margin: 10px 20px;
+}
+.awesome-icon-title {
+    text-align: center;
+    margin: 29px 0 25px;
+}
+.awesome-icon-title h3 {
+    font-weight: 600;
+    font-size: 20px;
+    }
+.awesome-text {
+    display: block;
+    margin: 0 25px;
+    max-width: 350px;
+    text-align: center;
+}
+.awesome-text p {
+    font-weight: 300;
+    font-size: 14px;
+
+    opacity: 0.5;
+}
+.portfolio {
+    background-image: url(/img/pic/pic1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 322px;
+    width: 100%;
+    text-align: center;
+    color: white;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    }
+.portfolio-title  { 
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 76px auto 0px;
+   }
+.portfolio-title:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    margin: 26px auto 35px;
+    background-color: #ffffff;
+  }
+.portfolio-text { 
+    font-size: 16px;
+    font-family:'Open Sans', sans-serif; ;
+    font-weight: 300;
+    opacity: 0.8;
 }
-.cards p {
-    margin-top: 29px;
+.portfolio-button {
+    width: 135px;
+    height: 42px;
+    margin: 33px auto;
 }
-.cards h3 {
-    margin-top: 20px;
+.portfolio-button a {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: 13px 20px;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
 }
-img {
-    margin: auto;
-}   
+.portfolio-button :hover{
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    width: 100%;
+    height: 101px;
+    background-color: #000000;
+}
+.footer-container {
+    margin: auto
+}
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 0;
+}
+.footer-item {
+    display: inline-block;
+    vertical-align: top;
+    color:white;
+    margin: 15px 14px;
+    text-decoration: none;
+}
+.footer-text {
+    text-align: center;
+    margin: 10px auto 0;
+}
+  .footer-text p {
+    font-weight: 200;
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+  }
