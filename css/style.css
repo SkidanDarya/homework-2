@@ -1,51 +1,67 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
-.awesome {
+
+
+/* Header */
+
+header {
     margin: 0 auto;
     width: 100%;
+    max-width: 1400px;
 }
+
 .container {
-    width: 1400px;
+    width: 100%;
     text-align: center;
 }
+
 .awesome-title h2 {
-    margin-top: 107px; 
+    margin-top: 107px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    font-size: 36px; 
+    font-size: 36px;
 }
+
 .awesome-title:after {
     display: block;
-    content: '';  
-    width: 64px ;
+    content: '';
+    width: 64px;
     height: 2px;
     margin: 30px auto;
     background-color: orange;
 }
+
 .container p {
     margin-top: 30px;
     font-size: 14px;
     opacity: 0.5;
-    }
+}
+
 .awesome-cards {
     display: flex;
     margin: 80px auto;
-    width: 1113px;
-    justify-content: space-around;
+    width: 100%;
 }
+
 .awesome-icon-light {
     width: 74px;
     height: 74px;
     margin: 0 auto;
     border: 2px solid orange;
     border-radius: 50%;
+    justify-content: space-between;
 }
+
 .awesome-icon-light img {
     width: 25px;
     margin: 21px 25px;
 }
+
 .awesome-icon-keyboard {
     width: 74px;
     height: 74px;
@@ -53,10 +69,12 @@ body {
     border: 2px solid orange;
     border-radius: 50%;
 }
+
 .awesome-icon-keyboard img {
     width: 30px;
     margin: 25px 25px;
 }
+
 .awesome-icon-flash {
     width: 70px;
     height: 70px;
@@ -64,32 +82,163 @@ body {
     border: 2px solid orange;
     border-radius: 50%;
 }
+
 .awesome-icon-flash img {
     width: 30px;
     margin: 10px 20px;
 }
+
 .awesome-icon-title {
     text-align: center;
     margin: 29px 0 25px;
 }
+
 .awesome-icon-title h3 {
     font-weight: 600;
     font-size: 20px;
-    }
+}
+
 .awesome-text {
     display: block;
     margin: 0 25px;
     max-width: 350px;
     text-align: center;
 }
+
 .awesome-text p {
     font-weight: 300;
     font-size: 14px;
-
     opacity: 0.5;
 }
+
+
+/* Section pricing */
+
+.container-2 {
+    background-color: #f5f5f5;
+    height: 884px;
+    width: 100%;
+}
+
+.pricing-title {
+    padding-top: 104px;
+}
+
+.pricing-title h2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+}
+
+.pricing-title h2:after {
+    display: block;
+    content: '';
+    width: 64px;
+    height: 2px;
+    margin: 30px auto;
+    background-color: orange;
+}
+
+.pricing-title p {
+    margin-top: 0px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #e0e0e1;
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 1109px;
+    margin: 0 auto;
+    padding-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.column {
+    color: #2f2f2f;
+    font-size: 14px;
+    width: 343px;
+    text-align: center
+}
+
+ul {
+    list-style: none;
+}
+
+.column-header {
+    height: 59px;
+    background-color: #2f2f2f;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.column-price {
+    height: 100px;
+    background-color: #2f2f2f;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.dollar {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+}
+
+.pricing-number {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.column-sub {
+    height: 51px;
+    background-color: #2f2f2f;
+    color: #919191;
+    font-style: italic;
+    font-size: 14px;
+    border-bottom: 4px solid #ff8c2c;
+}
+
+.fourth-li {
+    height: 51px;
+    background-color: #ff8c2c;
+    color: white;
+    font-size: 14px;
+}
+
+li {
+    display: block;
+    color: #a4a5a8;
+    border-bottom: 0.1px solid rgba(0, 0, 0, .3);
+    height: 40px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+/* Section portfolio */
+
 .portfolio {
-    background-image: url(/img/pic/pic1.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/img/pic/pic1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,13 +249,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-.portfolio-title  { 
+}
+
+.portfolio-title {
     font-size: 36px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin: 76px auto 0px;
-   }
+}
+
 .portfolio-title:after {
     content: "";
     display: block;
@@ -114,18 +265,22 @@ body {
     height: 2px;
     margin: 26px auto 35px;
     background-color: #ffffff;
-  }
-.portfolio-text { 
+}
+
+.portfolio-text {
     font-size: 16px;
-    font-family:'Open Sans', sans-serif; ;
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-weight: 300;
     opacity: 0.8;
 }
+
 .portfolio-button {
     width: 135px;
     height: 42px;
     margin: 33px auto;
 }
+
 .portfolio-button a {
     display: inline-block;
     color: white;
@@ -137,37 +292,47 @@ body {
     border: 2px solid;
     border-radius: 1px;
 }
-.portfolio-button :hover{
+
+.portfolio-button :hover {
     cursor: pointer;
 }
+
+
+/* Footer */
+
 .footer {
     display: flex;
     width: 100%;
     height: 101px;
     background-color: #000000;
 }
+
 .footer-container {
     margin: auto
 }
+
 .footer-icons {
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto 0;
 }
+
 .footer-item {
     display: inline-block;
     vertical-align: top;
-    color:white;
+    color: white;
     margin: 15px 14px;
     text-decoration: none;
 }
+
 .footer-text {
     text-align: center;
     margin: 10px auto 0;
 }
-  .footer-text p {
+
+.footer-text p {
     font-weight: 200;
     font-size: 12px;
     color: white;
     opacity: 0.8;
-  }
+}
