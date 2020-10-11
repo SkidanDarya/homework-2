@@ -188,7 +188,6 @@ ul {
     border-bottom: 1px solid white;
     display: flex;
     justify-content: center;
-    align-content: flex-end;
     flex-direction: row;
     align-items: flex-end;
 }
@@ -232,6 +231,92 @@ li {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+}
+
+
+/* Section review */
+
+.container_review {
+    margin: 0;
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+    height: 592px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review_title h2 {
+    margin-top: 109px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.review_title ::after {
+    display: block;
+    content: '';
+    width: 64px;
+    height: 2px;
+    margin: 30px auto;
+    background-color: orange;
+}
+
+.review p {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #e0e0e1;
+}
+
+.review_cards {
+    margin-top: 76px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.review_cards_item {
+    width: 100%;
+    max-width: 225px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review_cards_text {
+    width: 273px;
+    height: 147px;
+    background-image: url(../img/pic/mind.png);
+    padding-left: 10px;
+    font-style: italic;
+    color: #86878B;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.review_cards_img {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/pic/photo.png);
+}
+
+.review_cards_name {
+    width: 100px;
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+}
+
+.review_cards_profession {
+    width: 100px;
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+    color: #86878B;
 }
 
 
