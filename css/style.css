@@ -8,16 +8,166 @@ body {
 
 /* Header */
 
-header {
-    margin: 0 auto;
+.container-header {
     width: 100%;
     max-width: 1400px;
+    margin: 0 auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.container {
-    width: 100%;
-    text-align: center;
+.header-inner {
+    width: 1110px;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.header-logo {
+    margin-left: 150px;
+}
+
+
+/* Nav*/
+
+.nav {
+    font-size: 14px;
+    display: flex;
+}
+
+.nav-link {
+    margin-left: 46px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.69;
+    transition: 0.2s linear;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.nav-link:first-child {
+    margin-left: 0px;
+}
+
+
+/* Intro*/
+
+.intro {
+    height: 642px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/img/pic/axit_background.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 182px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.intro-inner {
+    margin-left: 150px;
+    max-width: 520px;
+    width: 100%;
+}
+
+.intro-title {
+    margin-top: 33px;
+    margin: 33px 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.intro-line {
+    height: 36px;
+    width: 76px;
+    border-bottom: 1px solid white;
+    transform: scale(1);
+}
+
+.intro-line:hover {
+    transform: scale(2, 1);
+}
+
+.intro-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 32px;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    margin-top: 44px;
+}
+
+
+/* Intro*/
+
+.social {
+    height: 106px;
+    margin: 0;
+    text-align: left;
+}
+
+.container-social {
+    max-width: 1400px;
+    width: 100%;
+    margin-top: 23px;
+    border-bottom: 2px solid #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-title h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.social-text {
+    width: 100%;
+    max-width: 360px;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #c3c3c5;
+    margin-left: 150px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 167px;
+}
+
+.social-item {
+    display: inline-block;
+    color: #cccccc;
+    margin: 30px 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+/* Awesome */
 
 .awesome-title h2 {
     margin-top: 107px;
@@ -40,6 +190,7 @@ header {
     margin-top: 30px;
     font-size: 14px;
     opacity: 0.5;
+    text-align: center;
 }
 
 .awesome-cards {
@@ -109,6 +260,7 @@ header {
     font-weight: 300;
     font-size: 14px;
     opacity: 0.5;
+    text-align: center;
 }
 
 
