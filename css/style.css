@@ -59,7 +59,7 @@ body {
 
 .intro {
     height: 642px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/img/pic/axit_background.jpg) center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/img/pic/axit_background.png) center no-repeat;
     background-size: cover;
     padding-top: 182px;
     flex-direction: column;
